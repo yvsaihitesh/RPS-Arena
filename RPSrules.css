@@ -1,0 +1,42 @@
+body {
+    font-family:'Courier New', 'Courier', 'monospace';
+    background-color: rgb(245, 246, 247);
+}
+.summary {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+}
+.note {
+    background-color: yellow;
+}
+p {
+    width:fit-content;
+}
+button {
+    background-color: rgb(225, 198, 47);
+    color: white;
+    border: none;
+    padding: 1vh 2vh;
+    border-radius: 1vh;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+button:hover {
+    cursor: pointer;
+    scale:1.2;
+    opacity: 0.6;
+}
+p {
+    margin: 2vh;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 6px 5px 5px gray;
+}
+span {
+    color: red;
+    font-size: 1.4rem;
+    font-weight: bold;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="RPS_Arena.css">
+        <title>RPS Arena</title>
+    </head>
+    <body>
+        <div class="select">
+        <h1>Click, Play, Win!</h1>
+        <select id="maxpoints">
+            <option value="3">3 Points</option>
+            <option value="1">1 Point</option>
+            <option value="5">5 Points</option>
+            <option value="7">7 Points</option>
+            <option value="10">10 Points</option>
+        </select>
+        </div>
+
+    <div class="container">
+        <div id="player">
+        <h2>YOU</h2>
+        <div class="player">
+            <button class="rock">
+                rock
+            </button>
+            <button class="paper">
+                Paper
+            </button>
+            <button class="scissor">
+                scissor
+            </button>
+        </div>
+        <h2 id="playerscore" style="text-align: start;">Score:</h2>
+    </div>
+    <div id="bot">
+        <h2>BOT</h2>
+        <div class="bot">
+           <button style="pointer-events: none;" class="rock">
+                rock
+            </button>
+            <button style="pointer-events: none;" class="paper">
+                Paper
+            </button>
+            <button style="pointer-events: none;" class="scissor">
+                scissor
+            </button>
+        </div>
+        <h2 id="botscore" style="text-align: start;">Score:</h2>
+    </div>
+    </div>
+    <div id="controls">
+        <button style="visibility: hidden;" class="pause">Pause</button>
+        <button class="start">Start</button>
+        <a href="RPSrules.html"><button class="rules">Rules</button></a>
+        <a href="RPSinfo.html"><button class="info">More Info</button></a>
+    </div>
+    <div id="winnerdisplay">
+    </div>
+    <p id="note">Take a moment to read the rules before jumping into the game!</p>
+    <p style="display: none;" id="note1">On the count of 4 (Rock,Paper,Scissor and Shoot!) you need to choose an option.</p>    
+    <script src="RPS_Arena.js"></script>
+    </body>
+</html>

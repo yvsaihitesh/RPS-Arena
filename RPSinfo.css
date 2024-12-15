@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(197, 222, 244);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+}
+p {
+    margin: 1vh;
+}
+h3 {
+    text-align: center;
+}
+.box {
+    background-color: rgb(167, 223, 223);
+    border-radius: 2vh;
+    padding: 1vh;
+    margin: 1vh;
+    
+}
+button {
+    background-color: rgb(225, 198, 47);
+    color: white;
+    border: none;
+    padding: 1vh 2vh;
+    border-radius: 1vh;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+button:hover {
+    cursor: pointer;
+    scale: 1.2;
+    opacity: 0.6;
+}
+span {
+    font-weight: bold;
+}

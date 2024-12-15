@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About RPS</title>
+        <link rel="stylesheet" href="RPSinfo.css">
+    </head>
+    <body>
+        <h3>RPS - Rock,Paper,Scissors</h3>
+        
+        <ul>
+            <li><p>Rock-Paper-Scissors is a simple hand game usually played between two people.It is generally used as a decision-making tool or for fun, in which each player simultaneously forms one of three shapes with an outstretched hand.These shapes are "rock" (a closed fist), "paper" (a flat hand), and "scissors" (a fist with the index finger and middle finger extended, forming a V).</p></li>
+            <li><p>This game originated in China where it was called "shoushiling", which means hand command games.It was then subsequently imported into Japan, where it reached its modern standardized form.</p></li>
+            <li><p>Rock,Paper,Scissor is chanted while playing the game, followed by an exclamation of "shoot" at the moment when the players are to reveal their choice(i.e. "Rock,Paper,Scissors,Shoot!").</p></li>
+        </ul>
+        <div class="box">
+        <h4>Advantages of the game:</h4>
+        <p><span>1.Decision-Making Tool:</span> Used for resolving minor disputes or selecting who goes first in a game or activity.</p>
+        <p><span>2.Develops Quick Thinking:</span> Players must choose shapes quickly, which can improve reflexes and decision-making skills.</p>
+        <p><span>3.Encourages Fair play:</span> Randomness ensures fairness and removes bias.</p>
+        <p><span>4.Universal Appeal:</span> It is simple, requires no equipment, and is accessible to people of all ages.</p>
+        </div>
+        
+        <div class="box">
+        <h4>Modern Uses of RPS game:</h4>
+        <p><span>1.Entertainment:</span> Yes, it's fun to play this! Who wouldn't want to play?</p>
+        <p><span>2.Education:</span> Demonstrates randomness and decision-making principles.</p>
+        <p><span>3.Psychology Studies:</span> Analyzing patterns and behaviour of the opponent and making decision based on that.</p>
+        </div>
+        
+        <p class="note">It's time to play the game! :) ,click on the button below to go to the home page.</p>
+       <div style="text-align: center;">
+        <button id="homepage">Home Page</button>
+       </div>
+       <script>
+        const homepage = document.getElementById("homepage")
+        const Note = document.getElementsByClassName("note")[0];
+        const paused = sessionStorage.getItem("paused") === "true";
+        if(paused){
+        homepage.textContent="Continue";
+        homepage.style.backgroundColor="green";
+        Note.textContent="Click the below button to continue the game.";
+        }
+        else{
+        homepage.textContent="Home Page";
+        homepage.style.backgroundColor="rgb(225, 198, 47)";
+        Note.textContent="It's time to play the game! :) , click on the button below to go to the home page.";
+        }
+        homepage.addEventListener("click", () => {
+        window.location.href="RPS_Arena.html";
+        });
+     </script>
+    </body>
+</html>

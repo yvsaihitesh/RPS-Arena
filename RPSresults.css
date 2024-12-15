@@ -1,0 +1,51 @@
+#veepn-breach-alert {
+    display: none;
+}
+
+body {
+    background:linear-gradient(to bottom right, rgb(40, 40, 222), #121212 );
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+}
+table {
+    border-radius: 8px;
+    padding: 1vh;
+    background-color: #ffd700;
+}
+th{
+    background-color: #1a237e;
+    color: white;
+    padding: 0.5vh;
+    border-radius: 5px;
+    border: 3px solid #c95630;
+}
+tr {
+    background-color: #f5f5dc;
+}
+td {
+    border: 1px solid #1a237e;
+    padding: 0.5vh;
+    border-radius: 4px;
+}
+td:hover {
+    color: white;
+    background-color: #1a237e;
+}
+
+button {
+    color: white;
+    border: none;
+    padding: 1vh 2vh;
+    border-radius: 1vh;
+    margin: 1vh 3vh;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    background-color: rgb(225, 198, 47);
+}
+button:hover {
+    cursor: pointer;
+    scale: 1.2;
+    opacity: 0.6;
+}

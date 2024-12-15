@@ -1,0 +1,167 @@
+#veepn-breach-alert {
+    display: none;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #32675a, #34495e);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 1%;
+}
+#bot  {
+    width:50%;
+    margin: 0 3vw 0 1vw;
+    background-color: #e74c3c;
+    box-shadow: 0px 0px 20px rgb(170, 157, 157);
+    border-radius: 5px;
+    position: relative;
+}
+ #player {
+    width: 50%;
+    background-color:#3498db;
+    margin: 0  1vw 0 3vw;
+    box-shadow: 0px 0px 20px rgb(170, 157, 157);
+    border-radius: 5px;
+    position: relative;
+ }
+.bot {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1%;
+    width: 100%;
+   
+}
+.player {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1%;
+    
+    width: 100%;
+}
+.rock {
+    
+    background: url("rock.png");
+}
+.paper {  
+    background: url("paper.png");
+}
+.scissor{  
+    background: url("scissor.png");
+}  
+.rock, .paper, .scissor {
+    width: 20vmin;
+    height: 20vmin;
+    border: none;
+    border-radius: 10px;
+    margin:1vh;
+    background-origin: content-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: transparent;
+    box-shadow: 0px 0px 20px rgb(170, 157, 157);
+    
+}
+h2 {
+    text-shadow: 0 0 10px rgb(219, 224, 67);
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 1vh;
+    overflow: visible;
+}
+.start, .playagain{
+    background-color: green;
+}
+.rules {
+    background-color: orange;
+}
+.info {
+    background-color: blue;
+}
+.start, .rules, .info, .homepage, .results, .pause, .resume, #winnerdisplay button{
+    color: white;
+    border: none;
+    padding: 1vh 2vh;
+    border-radius: 1vh;
+    margin: 1vh 3vh;
+}
+button {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+button:hover {
+    cursor: pointer;
+    scale: 1.15;
+    opacity: 0.7;
+}
+#winnerdisplay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 1vh;
+    box-shadow: 10px 5px 5px gray;
+    border-radius: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    color: rgb(218, 218, 50);
+    text-shadow: 0 0 10px;
+    margin: 0;
+}
+.select {
+    position: relative;
+    text-align: center;
+}
+#maxpoints {
+    background-color: black;
+    position: absolute;
+    color: white;
+    top: 50%;
+    transform: translate(120%,-50%);
+    margin: 0;
+    padding: 1vh;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+#maxpoints:hover {
+    scale: 1.1;
+    opacity: 0.7;
+}
+.homepage {
+    background-color: rgb(225, 198, 47);
+}
+.results {
+    background-color: rgb(92, 46, 92);
+}
+.pause, .resume {
+    background-color: rgb(225, 198, 47);
+}
+.stop {
+    background-color: red;
+}
+p {
+    color: #f9e79f;
+    font-size: 1.3rem;
+    text-shadow: 0 0 10px;
+}
+#controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="RPSrules.css">
+        <title>Rules</title>
+    </head>
+    <body>
+        <h3>Chill... Rules are simple</h3>
+        <p>This game is by default set for 3 points, the one who gets 3points first will win the game.If you wish to play for more points you can change it on home page .</p>
+        <p><span id="imp">On the count of 4 (Rock,Paper,Scissor and Shoot!) you need to make a decision</span> on choosing either rock or paper or scissor.</p>
+        <div>
+            <p><span>1.</span> player who chooses rock will beat another player who chooses scissors("rock crushes scissors").</p>
+            <div class="box">    
+            <img src="rock.png"><img src="greater.jpg"><img src="scissor.png">
+        </div>
+        </div>
+        <div>
+            <p><span>2.</span> player who chooses scissor will beat another player who chooses paper("scissors cut paper").</p>
+            <div class="box">
+            <img src="scissor.png"><img src="greater.jpg"><img src="paper.png">
+            </div>     
+        </div>
+        <div>
+            <p><span>3.</span> player who chooses paper will beat another player who chooses rock("paper covers rock").</p>
+            <div class="box">
+            <img src="paper.png"><img src="greater.jpg"><img src="rock.png">
+            </div>     
+        </div>
+        <div>
+            <p><span>4.</span> both players choose the  same sign then it is a tie.</p>
+        </div>
+        <div>
+            <p><span>5.</span> A player who doesn't choose an option and their score is greater than zero, '1' point will be deducted from their score.</p>
+        </div>
+        <p class="summary"><span style="font-weight: bold;">Summary:</span> In simple words,A player who decides to play rock will beat another player who chooses scissors ("rock crushes scissors"), but will lose to one who has played paper ("paper covers rock"); a play of paper will lose to a play of scissors ("scissors cuts paper"). If both players choose the same shape, the game is tied, but is usually replayed until there is a winner. </p>
+        <p class="note">It's time for some fun..... to go back to the game click on the Home Page button below.</p>
+        <div style="text-align: center;">
+        <button id="homepage">Home Page</button>
+        </div>
+     <script>
+        const homepage = document.getElementById("homepage")
+        const Note = document.getElementsByClassName("note")[0];
+        const paused = sessionStorage.getItem("paused") === "true";
+        if(paused){
+        homepage.textContent="Continue";
+        homepage.style.backgroundColor="green";
+        Note.textContent="Click the below button to continue the game.";
+        }
+        else{
+        homepage.textContent="Home Page";
+        homepage.style.backgroundColor="rgb(225, 198, 47)";
+        Note.textContent="It's time for some fun..... to go back to the game click on the Home Page button below.";
+        }
+        homepage.addEventListener("click", () => {
+        window.location.href="RPS_Arena.html";
+        });
+     </script>
+    </body>
+</html>
