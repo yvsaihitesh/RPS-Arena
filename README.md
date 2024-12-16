@@ -1,5 +1,5 @@
 # Rock-Paper-Scissors Game 🎮
-Welcome to the Rock-Paper-Scissors game! This classic game from your childhood is now available as a web-based version. Here's everything you need to know about it.
+Welcome to the Rock-Paper-Scissors game! This classic game from your childhood is now available as a web-based version. Here's everything you need to know about it.[GameInterface](#game-interface), [HowToPlay](#how-to-play), [PauseResumeStop](#pause-resume-and-stop) and [WinningTheGame](#winning-the-game).
 - 👇 Click the play button below to start playing:
 -  [play](https://yvsaihitesh.github.io/RPS-Arena/RPS_Arena.html)
 
