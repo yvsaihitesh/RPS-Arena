@@ -85,7 +85,7 @@ homepage.classList.add("homepage");
 
 //creating an button to show the game play
 const resultButton=document.createElement("button");
-resultButton.textContent="Results";
+resultButton.textContent="Your Gameplay";
 resultButton.classList.add("results");
 
 //Intializing variables
