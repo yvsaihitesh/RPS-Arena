@@ -59,6 +59,6 @@ Below the containers, there are four buttons:
     - **Rules:** View the game rules.
     - **Your Gameplay:** Displays a detailed table of every move, showing: Your choice and the bot’s choice, The scores for each round.It also includes a Homepage button to return to homepage.
   
-We hope you enjoy this web-based version of Rock-Paper-Scissors! Can you outsmart the bot and claim victory🚀?
+I hope you enjoy this web-based version of Rock-Paper-Scissors! Can you outsmart the bot and claim victory🚀?
   
 🎉 What are you waiting for? Click on play button beside to start playing the game now! 🕹️✨ [play](https://yvsaihitesh.github.io/RPS-Arena/RPS_Arena.html).
