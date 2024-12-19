@@ -415,6 +415,10 @@ const initiateTheGame = () => {
                 setTimeout(lockOrientation, 500); // Add delay before locking orientation
             })
     } 
+    const elementsToEnable = document.querySelectorAll(".player button");
+    elementsToEnable.forEach(element => {
+        element.style.pointerEvents="auto";
+    });
     playerScore=0;
     botScore=0;
     maxScore = parseInt(maxPoints.value, 10);
