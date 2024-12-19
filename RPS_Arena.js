@@ -126,6 +126,10 @@ startButton.addEventListener("click", () => {
         controlDiv.insertBefore(startButton,startSilbling);
         winnerdisplay.removeChild(resultButton);
         winnerdisplay.removeChild(homepage);
+        allPlayerChoices = [];
+        allBotChoices = [];
+        allPlayerScores = [];
+        allBotScores = [];
         increment.style.display="none";
         displayBotChoice.style.display="none";
         displayPlayerChoice.style.display="none";
