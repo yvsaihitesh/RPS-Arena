@@ -205,7 +205,7 @@ const handlingGame = () => {
 // Getting botchoice
 const botChoice = choices[Math.floor(Math.random() * choices.length)].trim().toLowerCase();
 
-//Checking wheter player doesn't choose any option
+//Checking whether player doesn't choose any option
             if(playerChoice === null) {
                 Note1.style.display="none";
                 warningdisplay.style.display="flex";
